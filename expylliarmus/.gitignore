@@ -1,0 +1,15 @@
+.vscode/
+
+# virtual environment
+.venv/
+
+# python bytecode
+__pycache__
+*.py[cod]
+
+# profiling results
+*profiling.html
+*profiling.svg
+*profiling.json
+*profiling.profile
+*profiling.txt
