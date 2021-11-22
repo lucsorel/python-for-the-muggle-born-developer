@@ -75,14 +75,13 @@ poetry run python -m cProfile -m expylliarmus.cli_lists -b 1-philosopher_stone -
 # outputs in a .profile file
 poetry run python -m cProfile -o cli_list_profiling.profile -m expylliarmus.cli_lists -b 1-philosopher_stone -b 3-azkaban -b 5-order_phenix -b 7-deathly_hallows
 # -> the results can be displayed in runsnake (sudo apt install runsnakerun)
-runsnake cli_list_profiling.profile
+runsnake cli_lists_profiling.profile
 ```
 
 ## Pympler
 
 [Pympler](https://pympler.readthedocs.io/en/latest/) is a development tool to measure, monitor and analyze the memory behavior of Python objects in a running Python application.
 It is an intrusive library: one has to import the monitoring functions of pympler and apply them on the python variable one wants to monitor.
-An example in `probtp/methods/_recipe.py`:
 
 ```python
 from pympler.asizeof import asizeof
