@@ -13,14 +13,12 @@ enableChalkboard: false
 
 # Python for the Muggle-born developer
 
+<img width="20%" src="assets/python_rennes.png" />
 
-<br />
-<br />
-<br />
 
 <div class="parseltongue">
 
-World technoZaure - 22<sup>nd</sup> April 2021 - Lucius Malforel
+Python Rennes - 24 novembre 2021 - Lucius Malforel
 
 </div>
 
@@ -31,7 +29,7 @@ World technoZaure - 22<sup>nd</sup> April 2021 - Lucius Malforel
 
 <img src="assets/luc-halloween.jpg" />
 
-* @Zenigwarts 2016
+* @Zenigwarts 2016 (green advocate 2020+)
 * OWL in <strong>Care of magical creatures - 🐍</strong> +3 years
 * `@lucsorel`
 
@@ -261,8 +259,7 @@ Use a virtual environment
 
 
 ```sh
-# 📜 thanks to pyenv, python version is now 3.x
-~ python -m venv my-project
+~ python -m venv my-project # 📜 thanks to pyenv, python version is now 3.x
 ~ cd my-project
 ```
 
@@ -278,7 +275,7 @@ my-project/
   ┗ pyvenv.cfg # env settings & paths to python binaries
 
 ~ source bin/activate
-~ (my-project) ➜  pip install fire
+~ (my-project) ➜  pip install matplotlib
 ```
 
 </div>
@@ -290,10 +287,14 @@ my-project/
 ```
 
 ```ini
-fire==0.4.0
-Pygments==2.8.1
-six==1.15.0
-termcolor==1.1.0
+cycler==0.11.0
+fonttools==4.28.2
+kiwisolver==1.3.2
+matplotlib==3.5.0
+numpy==1.21.4
+[...]
+six==1.16.0
+tomli==1.2.2
 ```
 
 </div>
@@ -313,6 +314,24 @@ termcolor==1.1.0
 * 😕 `pip un⋅install` does not update `requirements.txt`
 
 * ☹️ does not distinguish `production` from `development` dependencies
+
+--
+
+<div class="parseltongue">
+
+Associate an image to a concept
+
+</div>
+
+|  A  |  B  |  C  |
+|:---:|:---:|:---:|
+| <img src="assets/quiz/room_of_requirements.jpg" width="100%" /> | <img src="assets/quiz/invisibility.gif" width="100%" /> | <img src="assets/quiz/accio.gif" width="100%" /> |
+
+<br />
+
+1. `pip install`
+1. `python -m venv`
+1. `pip freeze`
 
 ---
 
@@ -390,8 +409,8 @@ expylliarmus/         # root folder of the codebase (version its contents)
 Install some production & developement dependencies:
 
 ```sh
-poetry add fire
-poetry add -D py2puml
+poetry add matplotlib
+poetry add -D pylint
 ```
 
 <div class="fragment">
@@ -404,18 +423,18 @@ name = "expylliarmus"
 version = "0.1.0"
 description = "Put a spell on you"
 # populated from your git config
-authors = ["Lucius Malforel <luc.sorel@zenika.com>"]
+authors = ["Lucius Malforel <l**.****l@z***a.c*m>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-fire = "^0.4.0"
+matplotlib = "^3.5.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
-py2puml = "^0.4.0"
+pylint = "^2.11.1"
 ```
 
-See other [optional keys](https://python-poetry.org/docs/pyproject/) (repo,, bug-tracker, licence, etc.)
+See other [optional keys](https://python-poetry.org/docs/pyproject/) (repo, bug-tracker, licence, etc.)
 
 </div>
 

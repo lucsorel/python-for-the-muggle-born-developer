@@ -1,3 +1,6 @@
+'''
+Alternative of cli_lists.py: a fully-implemented CLI based on generators
+'''
 
 from typing import Dict, Iterator, Tuple
 from argparse import ArgumentParser, Namespace

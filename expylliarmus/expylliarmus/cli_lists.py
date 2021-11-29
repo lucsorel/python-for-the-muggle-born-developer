@@ -1,10 +1,12 @@
-
+'''
+Evolution of __main__.py: fully-implemented CLI based on lists, with graphics and memory usage reporting
+'''
 from typing import Dict, List, Tuple
 from argparse import ArgumentParser, Namespace
 from pathlib import Path
 
 from expylliarmus.dump import save_spells_as_csv
-from expylliarmus.match import SPELL_MATCHER, SPELLS, Spell
+from expylliarmus.match import SPELL_MATCHER, SPELLS
 from expylliarmus.illustrate import analyze_spells_distribution
 from expylliarmus.pymp import report_memory_usage
 
@@ -36,7 +38,7 @@ def lowercase_spell_candidates(spell_candidates) -> List[Tuple[int,str]]:
     ]
 
 def validate_spell(spell: str) -> str:
-    return SPELLS_DICT.get(spell.lower(), None)
+    return SPELLS_DICT.get(spell, None)
 
 def filter_valid_spells_by_line(lowercased_spell_candidates) -> List[Tuple[int,str]]:
     valid_spells_by_line: List[Tuple[int, str]] = []

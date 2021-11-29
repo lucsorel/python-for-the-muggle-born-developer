@@ -8,4 +8,4 @@ def save_spells_as_csv(spells_by_line, csv_path: Path):
             f'{index},{spell}\n'
             for index, spell in spells_by_line
         ))
-    print((f'wrote {csv_path}'))
+    print(f'wrote {csv_path}')

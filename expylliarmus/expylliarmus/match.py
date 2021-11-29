@@ -1,5 +1,3 @@
-from collections import namedtuple
-Spell = namedtuple('Spell', ['index', 'name'])
 
 from re import compile
 

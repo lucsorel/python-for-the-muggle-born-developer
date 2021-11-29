@@ -26,7 +26,7 @@ codium .
 poetry add matplotlib
 
 # execute expylliarmus/__main__.py
-python -m expylliarmus -b 1-philosopher_stone -b 3-azkaban -b 5-order_phenix -b 7-deathly_hallows
+poetry run python -m expylliarmus -b 1-philosopher_stone -b 3-azkaban -b 5-order_phenix -b 7-deathly_hallows
 ```
 
 ## Profiling
