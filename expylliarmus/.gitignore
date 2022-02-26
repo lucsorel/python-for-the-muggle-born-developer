@@ -13,3 +13,6 @@ __pycache__
 *profiling.json
 *profiling.profile
 *profiling.txt
+
+# local folder where books are handled by the web API
+local/
