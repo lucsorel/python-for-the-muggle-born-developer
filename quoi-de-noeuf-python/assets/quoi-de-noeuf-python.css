@@ -1,0 +1,118 @@
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+    text-transform: none;
+    /* https://www.schemecolor.com/python-logo-colors.php */
+    background: linear-gradient(to right, #4B8BBE, #FFE873 40%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 100% 2px;
+    text-align: left;
+}
+.reveal h1 {
+    font-size: 2em;
+    background-size: 100% 5px;
+    text-align: center;
+}
+.reveal h2 {
+    font-size: 1.2em;
+}
+.reveal pre {
+    width: 100%;
+}
+.reveal table {
+    border: none;
+}
+.reveal table tbody td{
+    vertical-align: middle;
+}
+
+.reveal code{
+    color: #f92672 !important;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+  }
+.reveal pre{
+    color: #839496 !important;border: 0px !important;
+}
+.reveal pre code{
+background-color: #002B36 !important;
+color: #839496 !important;
+border-radius: 5px !important;
+border: 1px solid #002B36 !important;
+margin-left: 2px !important;
+margin-right: 2px !important;
+}
+.hljs-pseudo{color: #2b91af !important;}
+/*以上是自定义*/
+.hljs {
+display: block !important;
+overflow-x: auto !important;
+padding: 0.5em !important;
+background: #002b36 !important;
+color: #839496 !important;
+}
+.hljs-comment,
+.hljs-quote {
+color: #586e75 !important;
+}
+/* Solarized Green */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition {
+color: #859900 !important;
+}
+/* Solarized Cyan */
+.hljs-number,
+.hljs-tag,
+.hljs-value,
+.hljs-string,
+.hljs-meta .hljs-meta-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-at_rule,
+.hljs-regexp {
+color: #2aa198 !important;
+}
+/* Solarized Blue */
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+color: #268bd2 !important;
+}
+/* Solarized Yellow */
+.hljs-attribute,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class,
+.hljs-title,
+.hljs-type {
+color: #b58900 !important;
+}
+/* Solarized Orange */
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link {
+color: #cb4b16 !important;
+}
+/* Solarized Red */
+.hljs-built_in,
+.hljs-deletion {
+color: #dc322f !important;
+}
+.hljs-formula {
+background: #073642 !important;
+}
+.hljs-emphasis {
+font-style: italic !important;
+}
+.hljs-strong {
+font-weight: bold !important;
+}
